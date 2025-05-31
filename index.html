@@ -1,0 +1,27 @@
+<!DOCTYPE html>Add commentMore actions
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restablecer Contraseña</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="recuperar.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Restablecer Contraseña 🔑</h2>
+        <div id="message"></div> <form id="reset-password-form">
+            <div>
+                <label for="new-password">Nueva Contraseña:</label>
+                <input type="password" id="new-password" name="new-password" required minlength="6" placeholder="Introduce tu nueva contraseña">
+            </div>
+            <div>
+                <label for="confirm-password">Confirmar Nueva Contraseña:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="6" placeholder="Confirma tu nueva contraseña">
+            </div>
+            <button type="submit">Actualizar Contraseña</button>
+        </form>
+    </div>
+</body>
+</html>
